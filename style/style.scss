@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+html,body{
+    margin: 0;
+    padding:0;
+}
+header{
+    background-image: url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 633px;
+    max-width: 100%;
+    background-blend-mode: color-dodge;
+    background-color: rgba(9, 9, 34, 0.76);
+    font-family: 'Roboto', sans-serif;
+        .row{
+        padding: 25px 15px;
+        .col-xl-6{
+            ul{
+                list-style: none;
+                justify-content: flex-end;
+                li{
+                    margin-left: 35px;
+                    a{
+                        text-decoration: none;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .col-xl-3{
+            margin-top: -3px;
+            ul{
+                list-style: none;
+                justify-content: flex-end;
+                li{
+                    margin-left: 20px;
+                    a{
+                        display: inline-block;
+                        color: #fff;
+                        font-size: 14px;
+                        padding: 4px 3px;
+                        border: 2px solid transparent;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 50%;
+                        text-align: center;
+                        transition: .3s;
+                        &:hover{
+                            border: 2px solid #fff;
+                        }
+                    }
+                }
+            }
+        }
+        .hiddenbar{
+            a{
+                text-decoration: none;
+                color: #ffffff;
+                background-color: #259b2b;
+                padding: 5px 10px;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+   
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+   
+  
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    header{
+        nav{
+            .logocol{
+                text-align: center;
+                margin-bottom: 15px;
+            }
+            .navicol{
+                justify-content: center;
+            }
+            .socialcol{
+                justify-content: center;
+            }
+        }
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .example {background: orange;}
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+  }

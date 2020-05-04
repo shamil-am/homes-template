@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 633px;
+  max-width: 100%;
+  background-blend-mode: color-dodge;
+  background-color: rgba(9, 9, 34, 0.76);
+  font-family: 'Roboto', sans-serif;
+}
+
+header .row {
+  padding: 25px 15px;
+}
+
+header .row .col-xl-6 ul {
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .row .col-xl-6 ul li {
+  margin-left: 35px;
+}
+
+header .row .col-xl-6 ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header .row .col-xl-3 {
+  margin-top: -3px;
+}
+
+header .row .col-xl-3 ul {
+  list-style: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .row .col-xl-3 ul li {
+  margin-left: 20px;
+}
+
+header .row .col-xl-3 ul li a {
+  display: inline-block;
+  color: #fff;
+  font-size: 14px;
+  padding: 4px 3px;
+  border: 2px solid transparent;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header .row .col-xl-3 ul li a:hover {
+  border: 2px solid #fff;
+}
+
+header .row .hiddenbar a {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #259b2b;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  header nav .logocol {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  header nav .navicol {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header nav .socialcol {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .example {
+    background: orange;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .example {
+    background: pink;
+  }
+}
+/*# sourceMappingURL=style.css.map */
