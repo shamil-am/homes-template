@@ -3,6 +3,9 @@
 html,body{
     margin: 0;
     padding:0;
+    *{
+        box-sizing: border-box;
+    }
 }
 header{
     background-image: url(../img/bg.jpg);
@@ -16,6 +19,11 @@ header{
     font-family: 'Roboto', sans-serif;
         .row{
         padding: 25px 15px;
+        .col-xl-3,.logocol{
+            .logo{
+                text-align: left;
+            }
+        }
         .col-xl-6{
             ul{
                 list-style: none;
@@ -64,16 +72,92 @@ header{
             }
         }
     }
+    .yourtext{
+        text-align: center;
+        color: #ffffff;
+        margin-top: 100px;
+        h2{
+            font-size: 48px;
+            font-weight: 300;
+        }
+        h1{
+            font-size: 72px;
+            font-weight: 300;
+        }
+    }
 }
 
 
+section.search{
+    .container{
+        .row{
+            .col-xl-2{
+                padding: 20px 27px 29px;
+                p{
+                    font-size: 14px;
+                    color: #8f8fa8;
+                    font-weight: 300;
+                    margin-bottom: 20px;
+                }
+                span{
+                    color: #3f3f4b;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                .city-select,.property{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid #3434344d;
+                    padding-bottom: 5px;
+                }
+                .bedrooms-select,.bathrooms-select{
+                    ul{
+                        list-style: none;
+                        margin:0;
+                        padding:0;
+                        display: flex;
+                        li{
+                            margin: 0px 2px;
+                            &:nth-child(1){
+                                margin-left: 0px;
+                            }
+                            a{
+                                display: inline-block;
+                                background-color: #8f8fa8;
+                                height: 30px;
+                                width: 30px;
+                                border-radius: 20%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center; 
+                                color: #ffffff;                               
+                                &:hover{
+                                    text-decoration: none;
 
-
-
-
-
-
-
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .search-button{
+                padding: 0 27px;
+                button{
+                    height: 100%;
+                    width: 100%;
+                    background-color: #8ad144;
+                    padding: 20px 27px 29px;
+                    color: #ffffff;
+                    i{
+                        color: #ffffff;
+                        margin-right: 10px;  
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -101,7 +185,9 @@ header{
     header{
         nav{
             .logocol{
-                text-align: center;
+                .logo{
+                    text-align: center !important;
+                }
                 margin-bottom: 15px;
             }
             .navicol{
@@ -116,10 +202,36 @@ header{
   
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
-    .example {background: orange;}
+
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
-    .example {background: pink;}
-  }
+    header{
+        nav{
+            .logocol{
+                .logo{
+                    text-align: left !important;
+                }
+                margin-bottom: 15px;
+            }
+            .navicol{
+                justify-content: center;
+            }
+            .socialcol{
+                justify-content: center;
+            }
+        }
+    }
+
+    section.search{
+        .container{
+            .search-button{
+                padding: 0px !important;
+            }
+        }
+    }
+
+
+  } 
+  

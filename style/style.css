@@ -4,6 +4,11 @@ html, body {
   padding: 0;
 }
 
+html *, body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 header {
   background-image: url(../img/bg.jpg);
   background-position: center;
@@ -18,6 +23,10 @@ header {
 
 header .row {
   padding: 25px 15px;
+}
+
+header .row .col-xl-3 .logo, header .row .logocol .logo {
+  text-align: left;
 }
 
 header .row .col-xl-6 ul {
@@ -77,13 +86,118 @@ header .row .hiddenbar a {
   border-radius: 3px;
 }
 
+header .yourtext {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 100px;
+}
+
+header .yourtext h2 {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+header .yourtext h1 {
+  font-size: 72px;
+  font-weight: 300;
+}
+
+section.search .container .row .col-xl-2 {
+  padding: 20px 27px 29px;
+}
+
+section.search .container .row .col-xl-2 p {
+  font-size: 14px;
+  color: #8f8fa8;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+section.search .container .row .col-xl-2 span {
+  color: #3f3f4b;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+section.search .container .row .col-xl-2 .city-select, section.search .container .row .col-xl-2 .property {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #3434344d;
+  padding-bottom: 5px;
+}
+
+section.search .container .row .col-xl-2 .bedrooms-select ul, section.search .container .row .col-xl-2 .bathrooms-select ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.search .container .row .col-xl-2 .bedrooms-select ul li, section.search .container .row .col-xl-2 .bathrooms-select ul li {
+  margin: 0px 2px;
+}
+
+section.search .container .row .col-xl-2 .bedrooms-select ul li:nth-child(1), section.search .container .row .col-xl-2 .bathrooms-select ul li:nth-child(1) {
+  margin-left: 0px;
+}
+
+section.search .container .row .col-xl-2 .bedrooms-select ul li a, section.search .container .row .col-xl-2 .bathrooms-select ul li a {
+  display: inline-block;
+  background-color: #8f8fa8;
+  height: 30px;
+  width: 30px;
+  border-radius: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+}
+
+section.search .container .row .col-xl-2 .bedrooms-select ul li a:hover, section.search .container .row .col-xl-2 .bathrooms-select ul li a:hover {
+  text-decoration: none;
+}
+
+section.search .container .row .search-button {
+  padding: 0 27px;
+}
+
+section.search .container .row .search-button button {
+  height: 100%;
+  width: 100%;
+  background-color: #8ad144;
+  padding: 20px 27px 29px;
+  color: #ffffff;
+}
+
+section.search .container .row .search-button button i {
+  color: #ffffff;
+  margin-right: 10px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   header nav .logocol {
-    text-align: center;
     margin-bottom: 15px;
+  }
+  header nav .logocol .logo {
+    text-align: center !important;
   }
   header nav .navicol {
     -webkit-box-pack: center;
@@ -98,16 +212,26 @@ header .row .hiddenbar a {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .example {
-    background: orange;
-  }
-}
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .example {
-    background: pink;
+  header nav .logocol {
+    margin-bottom: 15px;
+  }
+  header nav .logocol .logo {
+    text-align: left !important;
+  }
+  header nav .navicol {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header nav .socialcol {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section.search .container .search-button {
+    padding: 0px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
